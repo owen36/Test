@@ -16,6 +16,8 @@ public class StartMenu : MonoBehaviour
                 Debug.Log("trigger");
                 this.gameObject.SetActive(false);    
         }
+
+        this.transform.parent.transform.SetAsLastSibling();
     }
 
     private bool IsMouseOverStartMenu()

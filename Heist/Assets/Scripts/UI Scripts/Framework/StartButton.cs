@@ -15,11 +15,14 @@ public class StartButton : MonoBehaviour
         startButton.onClick.AddListener(OnClick);
     }
 
+    private void Update()
+    {
+        startButton.enabled = !startMenu.activeSelf; 
+    }
+
     private void OnClick()
     {
-        if (startMenu.activeSelf)
-            startMenu.SetActive(false);
-        else
-            startMenu.SetActive(true);
+        if (!startMenu.activeSelf)
+            startMenu.SetActive(true);           
     }
 }
