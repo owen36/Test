@@ -17,7 +17,8 @@ public class StartButton : MonoBehaviour
 
     private void Update()
     {
-        startButton.enabled = !startMenu.activeSelf; 
+        startButton.enabled = !startMenu.activeSelf;
+        this.transform.parent.transform.SetAsLastSibling();
     }
 
     private void OnClick()

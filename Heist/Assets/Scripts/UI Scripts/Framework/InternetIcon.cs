@@ -20,6 +20,7 @@ public class InternetIcon : Icons
             windowObj = windowPrefab.gameObject;
             windowPrefab.gameObject.SetActive(true);
             windowPrefab.Init(this);
+            selectionImage.enabled = false;
             spawned = true;
         }
     }
