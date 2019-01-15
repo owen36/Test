@@ -1751,52 +1751,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2027342041}
     m_Modifications:
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].eventID
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6959100619162423192}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_TypeName
-      value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: startMenu
       value: 
@@ -1809,7 +1763,7 @@ PrefabInstance:
     - target: {fileID: 8593615831015925685, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8593615831015925684, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
@@ -1915,6 +1869,52 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].eventID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6959100619162423192}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[2].callback.m_TypeName
+      value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     - target: {fileID: 9111396132126084787, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
