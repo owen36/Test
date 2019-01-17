@@ -658,6 +658,9 @@ MonoBehaviour:
   closeButton: {fileID: 3043673501779108577}
   Content: {fileID: 9111396132126084787}
   icon: {fileID: 0}
+  windowsTaskBarPrefab: {fileID: 4965524006000504535, guid: 7e503ada09469f44f8ec17cf25a38fea,
+    type: 3}
+  taskBarTransform: {fileID: 0}
 --- !u!114 &3576590945204268951
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,23 +9,28 @@ public class Windows : MonoBehaviour
     public Text titleText;
     public Button closeButton;
     public Transform Content;
+
+
     public Icons icon;
+    public WindowsTaskBarComponent windowsTaskBarPrefab;
 
-    public void Start()
-    {
-        closeButton.onClick.AddListener(OnCloseClick);
-    }
+    public Transform taskBarTransform;
 
-    private void OnCloseClick()
-    {
-        if (icon != null)
-        {
-            if (icon.GetSpawnned())
-                icon.SetSpawnned(false);
-        }
+    //public void Start()
+    //{
+    //   // closeButton.onClick.AddListener(OnCloseClick);      
+    //}
 
-        Destroy(gameObject);
-    }
+    //private void OnCloseClick()
+    //{
+    //    //if (icon != null)
+    //    //{
+    //    //    if (icon.GetSpawnned())
+    //    //        icon.SetSpawnned(false);
+    //    //}
+    //   // gameObject.SetActive(false);
+    //   // Destroy(gameObject);
+    //}
 
     public void SetHeader(string header)
     {
@@ -34,8 +39,7 @@ public class Windows : MonoBehaviour
 
     public void OnClick()
     {
-        this.transform.SetSiblingIndex(this.transform.GetSiblingIndex() - (this.transform.GetSiblingIndex() + 1));
-        
+        this.transform.SetSiblingIndex(this.transform.GetSiblingIndex() - (this.transform.GetSiblingIndex() + 1));        
     }
 
 

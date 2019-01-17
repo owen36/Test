@@ -4,9 +4,42 @@ using UnityEngine;
 
 public class InternetWindow : Windows
 {
-    public void Init (Icons icon)
+    private WindowsTaskBarComponent component;
+    private GameObject obj;
+
+    private void Start()
     {
+        closeButton.onClick.AddListener(OnClose);
+
+        if (component == null)
+        {
+            component = Instantiate(windowsTaskBarPrefab, taskBarTransform);
+            obj = component.gameObject;
+        }
+        component.Init(icon.iconImage.sprite, "Internets");
+        component.taskButton.onClick.AddListener(OnClick);
+    }
+
+    public void Init (Icons icon)
+    {        
         this.icon = icon;
-        SetHeader("Internets");        
-    }        
+        SetHeader("Internets");
+        taskBarTransform = GameObject.Find("Task Bar").transform;
+    }
+
+    public void OnClose()
+    {
+        if(obj != null)
+        {
+            Destroy(obj);
+        }
+
+        if (icon != null)
+        {
+            if (icon.GetSpawnned())
+                icon.SetSpawnned(false);
+        }
+
+        Destroy(gameObject);
+    }
 }

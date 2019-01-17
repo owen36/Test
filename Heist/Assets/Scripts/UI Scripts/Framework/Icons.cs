@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class Icons : MonoBehaviour
 {
+    public Image iconImage;
     public Image selectionImage;
     public Button selfButton;
 
