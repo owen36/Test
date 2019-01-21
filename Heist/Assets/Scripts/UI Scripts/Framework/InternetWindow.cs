@@ -10,15 +10,14 @@ public class InternetWindow : Windows
     // can copy this for the first few windows
     public void Init(Icons icon)
     {
-        this.icon = icon;
-        SetHeader("Internets");        
+        //this.icon = icon;     
     }
 
     // fires right after Init, used for set up of buttons & spawning objects
     private void Start()
     {
         taskBarTransform = GameObject.Find("Task Bar").transform;
-
+        SetHeader("Web browser - Homepage - Underground.gov.org");
         if (icon != null)
             iconImage = icon.iconImage;
 
@@ -30,7 +29,7 @@ public class InternetWindow : Windows
         }
 
         // initilize the component aka the windows taskbar element
-        component.Init(null, "Internets");
+        component.Init(iconImage.sprite, "Web browser - Homepage...");
 
         // set listeners - they wait for OnClick
         component.taskButton.onClick.AddListener(OnClick);
@@ -45,12 +44,12 @@ public class InternetWindow : Windows
         {
             Destroy(obj);
         }
-        // null check, we cannot refrence a null object
-        if (icon != null)
-        {
-            if (icon.GetSpawnned())
-                icon.SetSpawnned(false);
-        }
+        //// null check, we cannot refrence a null object
+        //if (icon != null)
+        //{
+        //    if (icon.GetSpawnned())
+        //        icon.SetSpawnned(false);
+        //}
 
         //destroy this gameobject
         Destroy(gameObject);
