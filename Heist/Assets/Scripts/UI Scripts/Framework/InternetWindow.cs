@@ -4,42 +4,55 @@ using UnityEngine;
 
 public class InternetWindow : Windows
 {
-    private WindowsTaskBarComponent component;
-    private GameObject obj;
+    public WindowsTaskBarComponent component;
+    public GameObject obj;
 
+    // can copy this for the first few windows
+    public void Init(Icons icon)
+    {
+        this.icon = icon;
+        SetHeader("Internets");        
+    }
+
+    // fires right after Init, used for set up of buttons & spawning objects
     private void Start()
     {
-        closeButton.onClick.AddListener(OnClose);
+        taskBarTransform = GameObject.Find("Task Bar").transform;
 
+        if (icon != null)
+            iconImage = icon.iconImage;
+
+        // null check, we cannot refrence a null object
         if (component == null)
         {
             component = Instantiate(windowsTaskBarPrefab, taskBarTransform);
             obj = component.gameObject;
         }
-        component.Init(icon.iconImage.sprite, "Internets");
+
+        // initilize the component aka the windows taskbar element
+        component.Init(null, "Internets");
+
+        // set listeners - they wait for OnClick
         component.taskButton.onClick.AddListener(OnClick);
+        closeButton.onClick.AddListener(OnClose);
     }
 
-    public void Init (Icons icon)
-    {        
-        this.icon = icon;
-        SetHeader("Internets");
-        taskBarTransform = GameObject.Find("Task Bar").transform;
-    }
-
+    
     public void OnClose()
     {
+        // null check, cannot delete a null object
         if(obj != null)
         {
             Destroy(obj);
         }
-
+        // null check, we cannot refrence a null object
         if (icon != null)
         {
             if (icon.GetSpawnned())
                 icon.SetSpawnned(false);
         }
 
+        //destroy this gameobject
         Destroy(gameObject);
     }
 }

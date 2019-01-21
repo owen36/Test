@@ -10,18 +10,30 @@ public class InternetIcon : Icons
    // private InternetWindow window;
     private GameObject windowObj;
 
-    private void Update()
+    private void Start()
     {
-        if(clickCount >= 2 && !spawned)
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        clickCount = 0;
+        selfButton.onClick.AddListener(OnClick);
+    }
+
+    private void OnClick()
+    {
+        clickCount++;
+
+        InvokeRepeating("InactiveCheck", 0, 0.5f);
+
+        selectionImage.enabled = clickCount >= 1;
+
+        if (clickCount >= 2)
         {
-            // launch window
-            //window = WindowsMap.instance.GetInternetWindow();
             Instantiate(windowPrefab, canvas.transform);
             windowObj = windowPrefab.gameObject;
             windowPrefab.gameObject.SetActive(true);
             windowPrefab.Init(this);
             selectionImage.enabled = false;
             spawned = true;
+            clickCount = 0;
         }
     }
 }

@@ -15,12 +15,11 @@ public class Icons : MonoBehaviour
 
     public int clickCount = 0;
     private int inactiveCount = 0;
-    // Start is called before the first frame update
+
     void Start()
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         clickCount = 0;
-        selfButton.onClick.AddListener(OnClick);
     }
 
     public bool GetSpawnned()
@@ -31,21 +30,6 @@ public class Icons : MonoBehaviour
     public void SetSpawnned(bool newValue)
     {
         spawned = newValue;
-    }
-    private void OnClick()
-    {
-        clickCount++;
-
-        InvokeRepeating("InactiveCheck",0,0.5f);
-
-        selectionImage.enabled = clickCount >= 1;
-
-        if(clickCount > 2)
-        {
-            // open window here
-            selectionImage.enabled = false;
-            clickCount = 0;
-        }
     }
 
     private void InactiveCheck()

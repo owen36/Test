@@ -563,6 +563,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6959100619162423192}
+          m_MethodName: OnClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!1 &8593615831015925685
 GameObject:
@@ -661,6 +678,8 @@ MonoBehaviour:
   windowsTaskBarPrefab: {fileID: 4965524006000504535, guid: 7e503ada09469f44f8ec17cf25a38fea,
     type: 3}
   taskBarTransform: {fileID: 0}
+  component: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!114 &3576590945204268951
 MonoBehaviour:
   m_ObjectHideFlags: 0

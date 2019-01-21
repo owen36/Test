@@ -7,9 +7,9 @@ namespace windowsMap
     public class WindowsMap : MonoBehaviour
     {
         public Windows windowsMasterPrefab;
+
+
         public InternetWindow internetWindowPrefab;
-
-
         public static WindowsMap instance;
 
         private void Start()
