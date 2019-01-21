@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 423052763}
   - component: {fileID: 423052762}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: Icon Base
   m_TagString: Icon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2187,22 +2187,22 @@ PrefabInstance:
     - target: {fileID: 8593615831015925684, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -30.6
+      value: 37.2
       objectReference: {fileID: 0}
     - target: {fileID: 8593615831015925684, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 37
+      value: 44.1
       objectReference: {fileID: 0}
     - target: {fileID: 8593615831015925684, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1390.1
+      value: 1254.4
       objectReference: {fileID: 0}
     - target: {fileID: 8593615831015925684, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 836.2
+      value: 850.5
       objectReference: {fileID: 0}
     - target: {fileID: 8593615831015925684, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
@@ -2234,52 +2234,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].eventID
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6959100619162423192}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnClick
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434905394636379036, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[2].callback.m_TypeName
-      value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
     - target: {fileID: 9111396132126084787, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2288,7 +2242,7 @@ PrefabInstance:
     - target: {fileID: 9111396132126084787, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -29.725006
+      value: -29.725037
       objectReference: {fileID: 0}
     - target: {fileID: 2215730798052226686, guid: 1c045e2e42ebd724a8a1c5d14dcf3e28,
         type: 3}
