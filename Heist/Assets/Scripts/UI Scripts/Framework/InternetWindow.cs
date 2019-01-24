@@ -6,6 +6,8 @@ public class InternetWindow : Windows
 {
     public WindowsTaskBarComponent component;
     public GameObject obj;
+    public InternetNewsPanel internetNewsPanelPrefab;
+    private InternetNewsPanel internetNewsPanel;
 
     // can copy this for the first few windows
     public void Init(Icons icon)
@@ -28,6 +30,9 @@ public class InternetWindow : Windows
             obj = component.gameObject;
         }
 
+        if (internetNewsPanel == null)
+            internetNewsPanel = Instantiate(internetNewsPanelPrefab, Content);
+
         // initilize the component aka the windows taskbar element
         component.Init(iconImage.sprite, "Web browser - Homepage...");
 
@@ -40,16 +45,11 @@ public class InternetWindow : Windows
     public void OnClose()
     {
         // null check, cannot delete a null object
-        if(obj != null)
-        {
+        if(obj != null)        
             Destroy(obj);
-        }
-        //// null check, we cannot refrence a null object
-        //if (icon != null)
-        //{
-        //    if (icon.GetSpawnned())
-        //        icon.SetSpawnned(false);
-        //}
+        
+        if (internetNewsPanel != null)
+            Destroy(internetNewsPanel.gameObject);
 
         //destroy this gameobject
         Destroy(gameObject);

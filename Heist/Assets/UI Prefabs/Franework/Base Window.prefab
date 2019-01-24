@@ -822,6 +822,7 @@ MonoBehaviour:
   taskBarTransform: {fileID: 0}
   component: {fileID: 0}
   obj: {fileID: 0}
+  internetNewsPanelPrefab: {fileID: 0}
 --- !u!114 &3576590945204268951
 MonoBehaviour:
   m_ObjectHideFlags: 0
